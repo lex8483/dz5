@@ -9,37 +9,49 @@ public class Main {
         arr[0] = 1;
         arr[1] = 2;
         arr[2] = 3;
-        for (int i = 0; i < 2; i++) {
-            System.out.print(arr[i] + ",");
+        for (int i = 0; i < arr.length; i++) {
+            if (i < 2) {
+                System.out.print(arr[i] + ",");
+            } else
+                System.out.print(arr[i]);
         }
-        System.out.print(arr[2]);
         System.out.println();
         double[] dub = {1.57, 7.654, 9.986};
-        for (int i = 0; i < 2; i++) {
-            System.out.print(dub[i] + ",");
+        for (int i = 0; i < dub.length; i++) {
+            if (i < 2) {
+                System.out.print(dub[i] + ",");
+            } else
+                System.out.print(dub[i]);
         }
-        System.out.print(dub[2]);
         System.out.println();
         int[] weight = {63, 54, 67, 95, 77};
-        for (int i = 0; i < 4; i++) {
-            System.out.print(weight[i] + ",");
+        for (int i = 0; i < weight.length; i++) {
+            if (i < 4) {
+                System.out.print(weight[i] + ",");
+            } else
+                System.out.print(weight[i]);
         }
-        System.out.print(weight[4]);
         System.out.println("\n-------------------------------------------------------------");
-        for (int i = 2; i > 0; i--) {
-            System.out.print(arr[i] + ",");
+        for (int i = arr.length-1; i >= 0; i--) {
+            if (i > 0) {
+                System.out.print(arr[i] + ",");
+            } else
+                System.out.print(arr[i]);
         }
-        System.out.print(arr[0]);
         System.out.println();
-        for (int i = 2; i > 0; i--) {
-            System.out.print(dub[i] + ",");
+        for (int i = dub.length-1; i >= 0; i--) {
+            if (i > 0) {
+                System.out.print(dub[i] + ",");
+            } else
+                System.out.print(dub[i]);
         }
-        System.out.print(dub[0]);
         System.out.println();
-        for (int i = 4; i > 0; i--) {
-            System.out.print(weight[i] + ",");
+        for (int i = weight.length-1; i >= 0; i--) {
+            if (i > 0) {
+                System.out.print(weight[i] + ",");
+            } else
+                System.out.print(weight[i]);
         }
-        System.out.print(weight[0]);
         System.out.println("\n-------------------------------------------------------------");
         for (int i = 0; i < arr.length; i++) {
             if (!(arr[i] % 2 == 0)) {
