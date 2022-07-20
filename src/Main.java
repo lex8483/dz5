@@ -41,7 +41,7 @@ public class Main {
         }
         System.out.print(weight[0]);
         System.out.println("\n-------------------------------------------------------------");
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (!(arr[i] % 2 == 0)) {
                 arr[i] += 1;
             }
